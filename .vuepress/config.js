@@ -1,5 +1,4 @@
 module.exports = {
-  base: '/doc/',
   title: '我的学习记录',
   description: '学习记录',
   port: 8085,
