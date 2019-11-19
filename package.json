@@ -1,0 +1,12 @@
+{
+  "name": "vuePress",
+  "version": "1.0.0",
+  "description": "vue press test",
+  "main": "index.js",
+  "author": "wp1016",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "license": "MIT"
+}

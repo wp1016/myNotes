@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>PhotoSwipe中文文档 | 我的学习记录</title>
+    <meta name="description" content="学习记录">
+    
+    
+    <link rel="preload" href="/doc/assets/css/0.styles.547471eb.css" as="style"><link rel="preload" href="/doc/assets/js/app.cc42e0ae.js" as="script"><link rel="preload" href="/doc/assets/js/2.5004e8d4.js" as="script"><link rel="preload" href="/doc/assets/js/7.6da62fb6.js" as="script"><link rel="prefetch" href="/doc/assets/js/10.e62ea022.js"><link rel="prefetch" href="/doc/assets/js/11.d7c3d005.js"><link rel="prefetch" href="/doc/assets/js/12.ee6734a5.js"><link rel="prefetch" href="/doc/assets/js/13.90747e5d.js"><link rel="prefetch" href="/doc/assets/js/14.a4d5b0f8.js"><link rel="prefetch" href="/doc/assets/js/15.21b7313f.js"><link rel="prefetch" href="/doc/assets/js/16.c674646e.js"><link rel="prefetch" href="/doc/assets/js/3.19f73dc2.js"><link rel="prefetch" href="/doc/assets/js/4.326d6dc7.js"><link rel="prefetch" href="/doc/assets/js/5.7d0a56df.js"><link rel="prefetch" href="/doc/assets/js/6.19c01d84.js"><link rel="prefetch" href="/doc/assets/js/8.11a7e99d.js"><link rel="prefetch" href="/doc/assets/js/9.c49aa34c.js">
+    <link rel="stylesheet" href="/doc/assets/css/0.styles.547471eb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/doc/" class="home-link router-link-active"><!----> <span class="site-name">我的学习记录</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/doc/algorithms/" class="nav-link">数据结构</a></div><div class="nav-item"><a href="/doc/http/" class="nav-link">网络协议</a></div><div class="nav-item"><a href="/doc/docs/" class="nav-link router-link-active">中文文档</a></div><div class="nav-item"><a href="/doc/js/" class="nav-link">js基础</a></div><div class="nav-item"><a href="/doc/records/" class="nav-link">采坑记录</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/doc/algorithms/" class="nav-link">数据结构</a></div><div class="nav-item"><a href="/doc/http/" class="nav-link">网络协议</a></div><div class="nav-item"><a href="/doc/docs/" class="nav-link router-link-active">中文文档</a></div><div class="nav-item"><a href="/doc/js/" class="nav-link">js基础</a></div><div class="nav-item"><a href="/doc/records/" class="nav-link">采坑记录</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>PhotoSwipe中文文档</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/doc/docs/PhotoSwipe中文文档.html" class="active sidebar-link">PhotoSwipe中文文档</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#入门" class="sidebar-link">入门</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#初始化" class="sidebar-link">初始化</a></li></ul></li><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#选项" class="sidebar-link">选项</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#核心" class="sidebar-link">核心</a></li></ul></li><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#api" class="sidebar-link">API</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#方法" class="sidebar-link">方法</a></li><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#属性" class="sidebar-link">属性</a></li><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#事件" class="sidebar-link">事件</a></li><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#动态添加slides" class="sidebar-link">动态添加slides</a></li></ul></li><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#自定义html内容" class="sidebar-link">自定义HTML内容</a></li><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#响应式图片" class="sidebar-link">响应式图片</a></li><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#性能优化" class="sidebar-link">性能优化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#动画" class="sidebar-link">动画</a></li><li class="sidebar-sub-header"><a href="/doc/docs/PhotoSwipe中文文档.html#包含文件" class="sidebar-link">包含文件</a></li></ul></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>workbox中文文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/doc/docs/workbox中文文档.html" class="sidebar-link">workbox中文文档</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="photoswipe中文文档"><a href="#photoswipe中文文档" class="header-anchor">#</a> PhotoSwipe中文文档</h1> <h2 id="入门"><a href="#入门" class="header-anchor">#</a> 入门</h2> <p>开始之前，您需要了解的是：</p> <ul><li>PhotoSwipe 不是一个简单的jQuery插件,至少需要具备基本的JavaScript知识才能安装。</li> <li>PhotoSwipe需要预定义的图片尺寸<a href="https://photoswipe.com/documentation/faq.html#image-size" target="_blank" rel="noopener noreferrer">更多信息<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li>如果您在无响应的网站上使用PhotoSwipe，则控件将在移动设备上缩放（因为整个页面都缩放了）。因此，您需要实现自定义控件（例如，右上角的单个大关闭按钮）。</li> <li>文档中的所有代码均为纯Vanilla JS，并支持IE 8及更高版本。如果您的网站或应用程序使用某些JavaScript框架（例如jQuery或MooTools），或者您不需要支持旧版浏览器，请随时简化代码。</li> <li>避免为移动设备投放大图片（大于2000x1500px），因为大图片会大大降低动画效果，并可能导致崩溃（尤其是在iOS Safari上）。可能的解决方案：<a href="https://photoswipe.com/documentation/responsive-images.html" target="_blank" rel="noopener noreferrer">使用响应式图片<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，或在单独的页面上打开图像，或使用支持图像平铺的库（如<a href="https://leafletjs.com/" target="_blank" rel="noopener noreferrer">Leaflet<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>）（在FAQ中有更多信息）。</li></ul> <h3 id="初始化"><a href="#初始化" class="header-anchor">#</a> 初始化</h3> <h4 id="步骤1：引入js和css文件"><a href="#步骤1：引入js和css文件" class="header-anchor">#</a> 步骤1：引入JS和CSS文件</h4> <p>您可以在GitHub仓库库的dist /文件夹中找到它们
+Sass和未编译的JS文件位于src /文件夹中。
+如果你打算修改现有样式，则建议使用Sass，因为其中的代码是经过结构化和注释的。</p> <div class="language-html extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-html"><code><span class="token comment">&lt;!-- Core CSS file --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>path/to/photoswipe.css<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
+
+<span class="token comment">&lt;!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>path/to/default-skin/default-skin.css<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> 
+
+<span class="token comment">&lt;!-- Core JS file --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>path/to/photoswipe.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span> 
+
+<span class="token comment">&lt;!-- UI JS file --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>path/to/photoswipe-ui-default.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span> 
+</code></pre></div><p>引入的文件顺序无关紧要，只有在调用 <code>new PhotoSwipe()</code>时才会执行代码，如果你不需要在初始化时使用PhotoSwipe，请使用延迟加载</p> <p>PhotoSwipe还支持 AMD/CMD的方式导入：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token function">require</span><span class="token punctuation">(</span><span class="token punctuation">[</span> 
+        <span class="token string">'path/to/photoswipe.js'</span><span class="token punctuation">,</span> 
+        <span class="token string">'path/to/photoswipe-ui-default.js'</span> 
+    <span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span> <span class="token parameter">PhotoSwipe<span class="token punctuation">,</span> PhotoSwipeUI_Default</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">//      var gallery = new PhotoSwipe( someElement, PhotoSwipeUI_Default ...</span>
+    <span class="token comment">//      gallery.init() </span>
+    <span class="token comment">//      ...</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>您还可以通过Bower或者NPM进行安装。</p> <h4 id="步骤2：将photoswipe（-pswp）元素添加到dom"><a href="#步骤2：将photoswipe（-pswp）元素添加到dom" class="header-anchor">#</a> 步骤2：将PhotoSwipe（.pswp）元素添加到DOM</h4> <p>您可以通过JS动态地添加HTML代码（直接在初始化之前），也可以将其直接添加到页面中（就像在演示页面上完成的一样）。该代码可以附加在任何地方，但最好在<code>&lt;/body&gt;</code>之前。您可以在多个图库中重复使用它（只要您使用相同的UI类）。</p> <div class="language-html extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-html"><code><span class="token comment">&lt;!-- Root element of PhotoSwipe. Must have class pswp. --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp<span class="token punctuation">&quot;</span></span> <span class="token attr-name">tabindex</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>-1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>dialog<span class="token punctuation">&quot;</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__bg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token comment">&lt;!-- Slides wrapper with overflow:hidden. --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__scroll-wrap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__item<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__item<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__item<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token comment">&lt;!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__ui pswp__ui--hidden<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__top-bar<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+                <span class="token comment">&lt;!--  Controls are self-explanatory. Order can be changed. --&gt;</span>
+
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__counter<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__button pswp__button--close<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Close (Esc)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__button pswp__button--share<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Share<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__button pswp__button--fs<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Toggle fullscreen<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__button pswp__button--zoom<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Zoom in/out<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+                <span class="token comment">&lt;!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR --&gt;</span>
+                <span class="token comment">&lt;!-- element will get class pswp__preloader--active when preloader is running --&gt;</span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__preloader<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__preloader__icn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__preloader__cut<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__preloader__donut<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__share-modal pswp__share-modal--hidden pswp__single-tap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__share-tooltip<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span> 
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__button pswp__button--arrow--left<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Previous (arrow left)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__button pswp__button--arrow--right<span class="token punctuation">&quot;</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Next (arrow right)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__caption<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__caption__center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><code>pswp__bg</code>，<code>pswp__scroll-wrap</code>，<code>pswp__container</code>和<code>pswp__item</code>元素的顺序不能更改。</p> <p>您可能会问，为什么PhotoSwipe不能通过JS自动添加此代码，原因很简单–只是为了节省文件大小，以防万一您需要对布局进行一些修改。</p> <h4 id="步骤3：初始化"><a href="#步骤3：初始化" class="header-anchor">#</a> 步骤3：初始化</h4> <p>执行PhotoSwipe构造函数。它接受4个参数：</p> <ol><li>.pswp 元素（必须将其添加到DOM中）。</li> <li>PhotoSwipe UI类。如果您包括默认的photoswipe-ui-default.js，则类将为PhotoSwipeUI_Default。也可用false.</li> <li>包含 slides 对象的数组</li> <li>可配置的选项。</li></ol> <h4 id="创建幻灯片对象数组"><a href="#创建幻灯片对象数组" class="header-anchor">#</a> 创建幻灯片对象数组</h4> <p>数组中的每个对象都应包含有关幻灯片的数据，它可以是您希望在PhotoSwipe中显示的任何内容-图像的路径，标题字符串，共享数，注释等。</p> <p>PhotoSwipe默认使用5个属性：src(图像路径),w(图像宽度),h(图像高度),msrc(小图像占位符的路径，大图像将在顶部加载)，html（自定义HTML，更多关于它）</p> <p>在导航过程中，PhotoSwipe将自己的属性添加到该对象（如minZoom或已加载）</p> <p>您可以在PhotoSwipe读取时通过 gettingData事件动态定义幻灯片内容，例如，根据不同的屏幕尺寸提供不同的图像。</p> <h4 id="如何从链接列表构建幻灯片数组"><a href="#如何从链接列表构建幻灯片数组" class="header-anchor">#</a> 如何从链接列表构建幻灯片数组</h4> <p>假设您有一个看起来像这样的链接/缩略图列表（有关画廊标记的更多信息）：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;my-gallery&quot;</span> itemscope itemtype<span class="token operator">=</span><span class="token string">&quot;http://schema.org/ImageGallery&quot;</span><span class="token operator">&gt;</span>
+
+    <span class="token operator">&lt;</span>figure itemprop<span class="token operator">=</span><span class="token string">&quot;associatedMedia&quot;</span> itemscope itemtype<span class="token operator">=</span><span class="token string">&quot;http://schema.org/ImageObject&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">&quot;large-image.jpg&quot;</span> itemprop<span class="token operator">=</span><span class="token string">&quot;contentUrl&quot;</span> data<span class="token operator">-</span>size<span class="token operator">=</span><span class="token string">&quot;600x400&quot;</span><span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">&quot;small-image.jpg&quot;</span> itemprop<span class="token operator">=</span><span class="token string">&quot;thumbnail&quot;</span> alt<span class="token operator">=</span><span class="token string">&quot;Image description&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>figcaption itemprop<span class="token operator">=</span><span class="token string">&quot;caption description&quot;</span><span class="token operator">&gt;</span>Image caption<span class="token operator">&lt;</span><span class="token operator">/</span>figcaption<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>figure<span class="token operator">&gt;</span>
+
+    <span class="token operator">&lt;</span>figure itemprop<span class="token operator">=</span><span class="token string">&quot;associatedMedia&quot;</span> itemscope itemtype<span class="token operator">=</span><span class="token string">&quot;http://schema.org/ImageObject&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>a href<span class="token operator">=</span><span class="token string">&quot;large-image.jpg&quot;</span> itemprop<span class="token operator">=</span><span class="token string">&quot;contentUrl&quot;</span> data<span class="token operator">-</span>size<span class="token operator">=</span><span class="token string">&quot;600x400&quot;</span><span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>img src<span class="token operator">=</span><span class="token string">&quot;small-image.jpg&quot;</span> itemprop<span class="token operator">=</span><span class="token string">&quot;thumbnail&quot;</span> alt<span class="token operator">=</span><span class="token string">&quot;Image description&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>a<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>figcaption itemprop<span class="token operator">=</span><span class="token string">&quot;caption description&quot;</span><span class="token operator">&gt;</span>Image caption<span class="token operator">&lt;</span><span class="token operator">/</span>figcaption<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>figure<span class="token operator">&gt;</span>
+
+
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+</code></pre></div><p>并且您想点击缩略图以打开具有大图的PhotoSwipe，你需要执行以下操作：</p> <ol><li>将点击事件绑定到链接/缩略图。</li> <li>用户单击缩略图后，找到其索引。</li> <li>从DOM元素创建幻灯片对象数组–遍历找到链接的所有href属性值（大图像url），data-size属性（图像大小），缩略图的src和标题的内容。</li></ol> <p>photosweep并不在乎你怎么做。如果您使用jQuery或MooTools之类的框架，或者不需要支持IE8，代码可以大大简化。</p> <p>以下带有IE8支持的纯Vanilla JS实现：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">initPhotoSwipeFromDOM</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">gallerySelector</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">// parse slide data (url, title, size ...) from DOM elements </span>
+    <span class="token comment">// (children of gallerySelector)</span>
+    <span class="token keyword">var</span> <span class="token function-variable function">parseThumbnailElements</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">el</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> thumbElements <span class="token operator">=</span> el<span class="token punctuation">.</span>childNodes<span class="token punctuation">,</span>
+            numNodes <span class="token operator">=</span> thumbElements<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+            items <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            figureEl<span class="token punctuation">,</span>
+            linkEl<span class="token punctuation">,</span>
+            size<span class="token punctuation">,</span>
+            item<span class="token punctuation">;</span>
+
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> numNodes<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+            figureEl <span class="token operator">=</span> thumbElements<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// &lt;figure&gt; element</span>
+
+            <span class="token comment">// include only element nodes </span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>figureEl<span class="token punctuation">.</span>nodeType <span class="token operator">!==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+            linkEl <span class="token operator">=</span> figureEl<span class="token punctuation">.</span>children<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// &lt;a&gt; element</span>
+
+            size <span class="token operator">=</span> linkEl<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">'data-size'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'x'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// create slide object</span>
+            item <span class="token operator">=</span> <span class="token punctuation">{</span>
+                src<span class="token punctuation">:</span> linkEl<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">'href'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                w<span class="token punctuation">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>size<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                h<span class="token punctuation">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>size<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+
+
+            <span class="token keyword">if</span><span class="token punctuation">(</span>figureEl<span class="token punctuation">.</span>children<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// &lt;figcaption&gt; content</span>
+                item<span class="token punctuation">.</span>title <span class="token operator">=</span> figureEl<span class="token punctuation">.</span>children<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>innerHTML<span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">if</span><span class="token punctuation">(</span>linkEl<span class="token punctuation">.</span>children<span class="token punctuation">.</span>length <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// &lt;img&gt; thumbnail element, retrieving thumbnail url</span>
+                item<span class="token punctuation">.</span>msrc <span class="token operator">=</span> linkEl<span class="token punctuation">.</span>children<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">'src'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> 
+
+            item<span class="token punctuation">.</span>el <span class="token operator">=</span> figureEl<span class="token punctuation">;</span> <span class="token comment">// save link to element for getThumbBoundsFn</span>
+            items<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> items<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// find nearest parent element</span>
+    <span class="token keyword">var</span> <span class="token function-variable function">closest</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">closest</span><span class="token punctuation">(</span><span class="token parameter">el<span class="token punctuation">,</span> fn</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> el <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span> <span class="token function">fn</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span> <span class="token operator">?</span> el <span class="token punctuation">:</span> <span class="token function">closest</span><span class="token punctuation">(</span>el<span class="token punctuation">.</span>parentNode<span class="token punctuation">,</span> fn<span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// triggers when user clicks on thumbnail</span>
+    <span class="token keyword">var</span> <span class="token function-variable function">onThumbnailsClick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        e <span class="token operator">=</span> e <span class="token operator">||</span> window<span class="token punctuation">.</span>event<span class="token punctuation">;</span>
+        e<span class="token punctuation">.</span>preventDefault <span class="token operator">?</span> e<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> e<span class="token punctuation">.</span>returnValue <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">var</span> eTarget <span class="token operator">=</span> e<span class="token punctuation">.</span>target <span class="token operator">||</span> e<span class="token punctuation">.</span>srcElement<span class="token punctuation">;</span>
+
+        <span class="token comment">// find root element of slide</span>
+        <span class="token keyword">var</span> clickedListItem <span class="token operator">=</span> <span class="token function">closest</span><span class="token punctuation">(</span>eTarget<span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">el</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span>el<span class="token punctuation">.</span>tagName <span class="token operator">&amp;&amp;</span> el<span class="token punctuation">.</span>tagName<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">'FIGURE'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>clickedListItem<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// find index of clicked item by looping through all child nodes</span>
+        <span class="token comment">// alternatively, you may define index via data- attribute</span>
+        <span class="token keyword">var</span> clickedGallery <span class="token operator">=</span> clickedListItem<span class="token punctuation">.</span>parentNode<span class="token punctuation">,</span>
+            childNodes <span class="token operator">=</span> clickedListItem<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span>childNodes<span class="token punctuation">,</span>
+            numChildNodes <span class="token operator">=</span> childNodes<span class="token punctuation">.</span>length<span class="token punctuation">,</span>
+            nodeIndex <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            index<span class="token punctuation">;</span>
+
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> numChildNodes<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>childNodes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>nodeType <span class="token operator">!==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+                <span class="token keyword">continue</span><span class="token punctuation">;</span> 
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">if</span><span class="token punctuation">(</span>childNodes<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> clickedListItem<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                index <span class="token operator">=</span> nodeIndex<span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            nodeIndex<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>index <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// open PhotoSwipe if valid index found</span>
+            <span class="token function">openPhotoSwipe</span><span class="token punctuation">(</span> index<span class="token punctuation">,</span> clickedGallery <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// parse picture index and gallery index from URL (#&amp;pid=1&amp;gid=2)</span>
+    <span class="token keyword">var</span> <span class="token function-variable function">photoswipeParseHash</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> hash <span class="token operator">=</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>hash<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        params <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>hash<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> params<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">var</span> vars <span class="token operator">=</span> hash<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'&amp;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> vars<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>vars<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">var</span> pair <span class="token operator">=</span> vars<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'='</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+            <span class="token keyword">if</span><span class="token punctuation">(</span>pair<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>           
+            params<span class="token punctuation">[</span>pair<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> pair<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span>gid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            params<span class="token punctuation">.</span>gid <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>params<span class="token punctuation">.</span>gid<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> params<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">var</span> <span class="token function-variable function">openPhotoSwipe</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index<span class="token punctuation">,</span> galleryElement<span class="token punctuation">,</span> disableAnimation<span class="token punctuation">,</span> fromURL</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> pswpElement <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'.pswp'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            gallery<span class="token punctuation">,</span>
+            options<span class="token punctuation">,</span>
+            items<span class="token punctuation">;</span>
+
+        items <span class="token operator">=</span> <span class="token function">parseThumbnailElements</span><span class="token punctuation">(</span>galleryElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// define options (if needed)</span>
+        options <span class="token operator">=</span> <span class="token punctuation">{</span>
+
+            <span class="token comment">// define gallery index (for URL)</span>
+            galleryUID<span class="token punctuation">:</span> galleryElement<span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">'data-pswp-uid'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+            <span class="token function-variable function">getThumbBoundsFn</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// See Options -&gt; getThumbBoundsFn section of documentation for more info</span>
+                <span class="token keyword">var</span> thumbnail <span class="token operator">=</span> items<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">.</span>el<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'img'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// find thumbnail</span>
+                    pageYScroll <span class="token operator">=</span> window<span class="token punctuation">.</span>pageYOffset <span class="token operator">||</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">,</span>
+                    rect <span class="token operator">=</span> thumbnail<span class="token punctuation">.</span><span class="token function">getBoundingClientRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+
+                <span class="token keyword">return</span> <span class="token punctuation">{</span>x<span class="token punctuation">:</span>rect<span class="token punctuation">.</span>left<span class="token punctuation">,</span> y<span class="token punctuation">:</span>rect<span class="token punctuation">.</span>top <span class="token operator">+</span> pageYScroll<span class="token punctuation">,</span> w<span class="token punctuation">:</span>rect<span class="token punctuation">.</span>width<span class="token punctuation">}</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// PhotoSwipe opened from URL</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>fromURL<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>options<span class="token punctuation">.</span>galleryPIDs<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// parse real index when custom PIDs are used </span>
+                <span class="token comment">// http://photoswipe.com/documentation/faq.html#custom-pid-in-url</span>
+                <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> items<span class="token punctuation">.</span>length<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">if</span><span class="token punctuation">(</span>items<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>pid <span class="token operator">==</span> index<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        options<span class="token punctuation">.</span>index <span class="token operator">=</span> j<span class="token punctuation">;</span>
+                        <span class="token keyword">break</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">// in URL indexes start from 1</span>
+                options<span class="token punctuation">.</span>index <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            options<span class="token punctuation">.</span>index <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// exit if index not found</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span> <span class="token function">isNaN</span><span class="token punctuation">(</span>options<span class="token punctuation">.</span>index<span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>disableAnimation<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            options<span class="token punctuation">.</span>showAnimationDuration <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// Pass data to PhotoSwipe and initialize it</span>
+        gallery <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PhotoSwipe</span><span class="token punctuation">(</span> pswpElement<span class="token punctuation">,</span> PhotoSwipeUI_Default<span class="token punctuation">,</span> items<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        gallery<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// loop through all gallery elements and bind events</span>
+    <span class="token keyword">var</span> galleryElements <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span> gallerySelector <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> l <span class="token operator">=</span> galleryElements<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;</span> l<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        galleryElements<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'data-pswp-uid'</span><span class="token punctuation">,</span> i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        galleryElements<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>onclick <span class="token operator">=</span> onThumbnailsClick<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Parse URL and open gallery if it contains #&amp;pid=3&amp;gid=1</span>
+    <span class="token keyword">var</span> hashData <span class="token operator">=</span> <span class="token function">photoswipeParseHash</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>hashData<span class="token punctuation">.</span>pid <span class="token operator">&amp;&amp;</span> hashData<span class="token punctuation">.</span>gid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">openPhotoSwipe</span><span class="token punctuation">(</span> hashData<span class="token punctuation">.</span>pid <span class="token punctuation">,</span>  galleryElements<span class="token punctuation">[</span> hashData<span class="token punctuation">.</span>gid <span class="token operator">-</span> <span class="token number">1</span> <span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token boolean">true</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// execute above function</span>
+<span class="token function">initPhotoSwipeFromDOM</span><span class="token punctuation">(</span><span class="token string">'.my-gallery'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="选项"><a href="#选项" class="header-anchor">#</a> 选项</h2> <p>选项以键值对的形式添加并作为参数传递给PhotoSwipe构造函数，例如：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">var</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+    index<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    escKey<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// ui option</span>
+    timeToIdle<span class="token punctuation">:</span> <span class="token number">4000</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> gallery <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PhotoSwipe</span><span class="token punctuation">(</span> someElement<span class="token punctuation">,</span> PhotoSwipeUI_Default<span class="token punctuation">,</span> someItems<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+gallery<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Note that options object is cloned during the initialization.</span>
+<span class="token comment">// But you can access it via `gallery.options`.</span>
+<span class="token comment">// For example, to dynamically change `escKey`:</span>
+gallery<span class="token punctuation">.</span>options<span class="token punctuation">.</span>escKey <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+<span class="token comment">// `options.escKey = false` will not work</span>
+</code></pre></div><h3 id="核心"><a href="#核心" class="header-anchor">#</a> 核心</h3> <ul><li><strong>index</strong>: number类型| 默认值：0</li></ul> <p>开始幻灯片索引。0是第一张幻灯片。必须为整数，而不是字符串。</p> <ul><li><strong>getThumbBoundsFn</strong>: function
+函数应该返回一个具有坐标的对象，初始缩放动画将从坐标开始(或缩放动画将结束)。</li></ul> <p>对象应该包含三个属性:x (相对于文档左上角水平偏移量)，y (相对于文档左上角垂直偏移量)，w(元素的宽度)。高度将根据大图的尺寸自动计算。例如，如果你返回{x:0,y:0,w:50}缩放动画将从页面左上角开始。</p> <p>函数包含一个参数<code>index</code>：打开或关闭项的下标.</p> <p>在非模态框模式下，模板相对于视图的位置应该从x和y中减去。更多信息请看<a href="https://photoswipe.com/documentation/faq.html#inline-gallery" target="_blank" rel="noopener noreferrer">FAQ<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。</p> <p>计算缩略图位置的例子:</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token function-variable function">getThumbBoundsFn</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">// find thumbnail element</span>
+    <span class="token keyword">var</span> thumbnail <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'.my-gallery-thumbnails'</span><span class="token punctuation">)</span><span class="token punctuation">[</span>index<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// get window scroll Y</span>
+    <span class="token keyword">var</span> pageYScroll <span class="token operator">=</span> window<span class="token punctuation">.</span>pageYOffset <span class="token operator">||</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span> 
+    <span class="token comment">// optionally get horizontal scroll</span>
+
+    <span class="token comment">// get position of element relative to viewport</span>
+    <span class="token keyword">var</span> rect <span class="token operator">=</span> thumbnail<span class="token punctuation">.</span><span class="token function">getBoundingClientRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+
+    <span class="token comment">// w = width</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>x<span class="token punctuation">:</span>rect<span class="token punctuation">.</span>left<span class="token punctuation">,</span> y<span class="token punctuation">:</span>rect<span class="token punctuation">.</span>top <span class="token operator">+</span> pageYScroll<span class="token punctuation">,</span> w<span class="token punctuation">:</span>rect<span class="token punctuation">.</span>width<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+
+    <span class="token comment">// Good guide on how to get element coordinates:</span>
+    <span class="token comment">// http://javascript.info/tutorial/coordinates</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果你的缩略图的尺寸与大图像的尺寸不匹配，考虑启用缩放+渐变过渡。您可以通过添加选项<code>showHideOpacity:true</code>来做到这一点(试着将它添加到上面的代码页来测试它的外观)。或者通过添加<code>hideAnimationDuration:0</code>, <code>showAnimationDuration:0</code>来禁用过渡。更多信息在<a href="https://photoswipe.com/documentation/faq.html#different-thumbnail-dimensions" target="_blank" rel="noopener noreferrer">FAQ<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>中。</p> <ul><li><strong>showHideOpacity</strong> :boolean | false</li></ul> <p>如果设置为false:过渡动画时图片的透明度不会随着图片的缩放而改变，否则 根PhotoSwipe元素的透明度和图片缩放会随着过渡动画而改变</p> <p>如果想要仅仅启用透明度过渡(没有缩放)，不要定义getThumbBoundsFn选项。</p> <ul><li><strong>showAnimationDuration</strong> number | 333</li></ul> <p>放大动画持续时间(毫秒)。设置为0禁用。除了这个JS选项，你还需要CSS文件:</p> <div class="language-css extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br></div><pre class="language-css"><code><span class="token selector">.pswp--animate_opacity,
+.pswp__bg,
+.pswp__caption,
+.pswp__top-bar,
+.pswp--has_mouse .pswp__button--arrow--left,
+.pswp--has_mouse .pswp__button--arrow--right</span><span class="token punctuation">{</span>
+    <span class="token property">-webkit-transition</span><span class="token punctuation">:</span> opacity 333ms <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>.4<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.22<span class="token punctuation">,</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">transition</span><span class="token punctuation">:</span> opacity 333ms <span class="token function">cubic-bezier</span><span class="token punctuation">(</span>.4<span class="token punctuation">,</span>0<span class="token punctuation">,</span>.22<span class="token punctuation">,</span>1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>如果使用Sass，只需更改_main-settings.scss中的转换持续时间变量。</p> <ul><li><strong>hideAnimationDuration</strong> : number | 333</li></ul> <p>缩小动画的持续时间，pswp——open类将被添加到根元素中，您可以使用它在CSS中应用不同的转换持续时间。</p> <ul><li><strong>bgOpacity</strong>: number | 1</li></ul> <p><code>.pswp__bg</code> 元素背景的透明度，取值范围0-1，通过js设置，随着相关手势改变。</p> <ul><li><strong>spacing</strong>: number | 0.12</li></ul> <p>幻灯片间隔，单位百分比，0.12表示滑动饰扣宽度的12%（四舍五入）</p> <ul><li><strong>allowPanToNext</strong>: boolean | true</li></ul> <p>允许手势滑动到切换时图片处于缩放状态，此选项在无触摸手势的设备上永远为false。</p> <ul><li><strong>maxSpreadZoom</strong>：number | 2</li></ul> <p>执行扩展(缩放)手势时的最大缩放级别。2表示图像可以从原来的大小缩小2倍。在这里尽量避免大的值，因为太大的图像可能会在移动设备上导致内存问题(尤其是在iOS上)。</p> <ul><li><strong>getDoubleTapZoom</strong>：function</li></ul> <p>在双击手势触发后返回缩放级别，或当用户点击缩放图标时，或当鼠标点击图片时。如果返回1 图片将回到原始尺寸。</p> <p>默认值：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token function-variable function">getDoubleTapZoom</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">isMouseClick<span class="token punctuation">,</span> item</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">// isMouseClick          - true if mouse, false if double-tap</span>
+    <span class="token comment">// item                  - slide object that is zoomed, usually current</span>
+    <span class="token comment">// item.initialZoomLevel - initial scale ratio of image</span>
+    <span class="token comment">//                         e.g. if viewport is 700px and image is 1400px,</span>
+    <span class="token comment">//                              initialZoomLevel will be 0.5</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>isMouseClick<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// is mouse click on image or zoom icon</span>
+
+        <span class="token comment">// zoom to original</span>
+        <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// e.g. for 1400px image:</span>
+        <span class="token comment">// 0.5 - zooms to 700px</span>
+        <span class="token comment">// 2   - zooms to 2800px</span>
+
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+        <span class="token comment">// is double-tap</span>
+
+        <span class="token comment">// zoom to original if initial zoom is less than 0.7x,</span>
+        <span class="token comment">// otherwise to 1.5x, to make sure that double-tap gesture always zooms image</span>
+        <span class="token keyword">return</span> item<span class="token punctuation">.</span>initialZoomLevel <span class="token operator">&lt;</span> <span class="token number">0.7</span> <span class="token operator">?</span> <span class="token number">1</span> <span class="token punctuation">:</span> <span class="token number">1.5</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>函数在每次启动放大动画时被调用。因此，您可以根据图像的大小或屏幕DPI为不同的图像返回不同的值。</p> <ul><li><strong>loop</strong>：boolean | true</li></ul> <p>手势滑动时是否循环滚动。当滚动选项少于3张时一直为 false</p> <p>此选项与箭头导航无关。箭头循环永久开启。您可以通过创建自定义UI来修改此行为。</p> <ul><li><strong>pinchToClose</strong>：boolean | true</li></ul> <p>双指捏合关闭画廊手势，画廊的背景将逐渐淡出，因为用户缩小。手势完成后，画廊将关闭</p> <ul><li><strong>closeOnScroll</strong>：boolean | true</li></ul> <p>页面滚动时关闭画廊，该选项只适用于非手势设备。</p> <ul><li><strong>closeOnVerticalDrag</strong>：boolean | true</li></ul> <p>垂直拖动图片时关闭画廊。</p> <ul><li><strong>mouseUsed</strong>：boolean | true</li></ul> <p>该选项允许您预定义是否使用鼠标，一些PhotoSwipe 特性依赖它，例如：默认的UI左右箭头只会在选项设置为true的情况下显示，</p> <ul><li><strong>escKey</strong>：boolean | true</li></ul> <p>支持使用<code>Esc</code>键退出画廊模式，此属性支持动态设置
+<code>yourPhotoSwipeInstance.options.escKey = false;</code></p> <ul><li><strong>arrowKeys</strong>: boolean | true</li></ul> <p>是否开启键盘左右键导航，可动态开启<code>yourPhotoSwipeInstance.options.arrowKeys = false;</code></p> <ul><li><strong>history</strong>： boolean | true</li></ul> <p>如果设置为false，则禁用历史记录模块(后退按钮关闭图库，每个幻灯片的唯一URL)。您还可以从构建中排除history.js模块。</p> <ul><li><strong>galleryUID</strong>: number | 1</li></ul> <p>画廊唯一ID。历史模块在形成URL时使用。例如，带有UID 1的画廊的第二张图片将有URL: http://example.com/#&amp;gid=1&amp;pid=2。</p> <ul><li><strong>galleryPIDs</strong>： boolean | false</li></ul> <p>允许为每个幻灯片对象自定义id。如果将选项设置为true，则滑动对象必须具有pid(图片标识符)属性，该属性可以是字符串或整数。例如:</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">var</span> slides <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        src<span class="token punctuation">:</span> <span class="token string">'path/to/1.jpg'</span><span class="token punctuation">,</span>
+        w<span class="token punctuation">:</span><span class="token number">500</span><span class="token punctuation">,</span>
+        h<span class="token punctuation">:</span><span class="token number">400</span><span class="token punctuation">,</span>
+        pid<span class="token punctuation">:</span> <span class="token string">'image-one'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        src<span class="token punctuation">:</span> <span class="token string">'path/to/2.jpg'</span><span class="token punctuation">,</span>
+        w<span class="token punctuation">:</span><span class="token number">300</span><span class="token punctuation">,</span>
+        h<span class="token punctuation">:</span><span class="token number">700</span><span class="token punctuation">,</span>
+        pid<span class="token punctuation">:</span> <span class="token string">'image-two'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token operator">...</span> 
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>第二个幻灯片的Url为 <code>http://example.com/#&amp;gid=1&amp;pid=image-two</code></p> <p>有关如何实现自定义PID的更多信息，请参阅FAQ部分。</p> <ul><li><strong>errorMsg</strong> :string</li></ul> <p>图像未加载时的错误信息 <code>%url%</code>将被图像的url替换。</p> <p>默认值：</p> <div class="language-html extra-class"><div class="highlight-lines"><br><br></div><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>pswp__error-msg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>%url%<span class="token punctuation">&quot;</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>_blank<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>The image<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> could not be loaded.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li><strong>preload</strong>: array | [1,1]</li></ul> <p>根据移动方向延迟加载附近的图片。应该是一个有两个整数的数组，第一个整数是当前图像之前要预加载的项数，第二个整数是当前图像之后后要预加载的项数。例如，如果你把它设置为[1,3]，它将加载当前图片之前一张图片和之后的三张图片。数组的值不能小于1。</p> <ul><li><strong>mainClass</strong>: string | undefined</li></ul> <p>.pswp 根元素的额外添加的类名，可以包含多个类名，已空格分隔</p> <ul><li><strong>getNumItemsFn</strong>：function</li></ul> <p>返回画廊中图片总数的函数。尽量保证函数简洁，此函数会频繁执行。</p> <ul><li><strong>focus</strong>： boolean | true</li></ul> <p>画廊打开后将设置PhotoSwipe 元素为焦点</p> <ul><li><strong>isClickableElement</strong>：function</li></ul> <p>默认值：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div></div><pre class="language-js"><code><span class="token function-variable function">isClickableElement</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">el</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> el<span class="token punctuation">.</span>tagName <span class="token operator">===</span> <span class="token string">'A'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>检查元素是否可以点击，如果是，PhotoSwipe 将不执行 <code>preventDefault</code>以保证点击生效。
+函数应该尽可能间接，因为它在拖动时会被多次执行。</p> <ul><li><strong>modal</strong>： boolean | true</li></ul> <p>控制 PhotoSwipe 查看器是否占据整个视图区域。 如果设置为false，查看器将已当前位置父元素为魔板展开</p> <h4 id="默认ui选项"><a href="#默认ui选项" class="header-anchor">#</a> 默认UI选项</h4> <p>将PhotoSwipeUI_Default (dist/ui/photoswipe-ui-default.js)的选项以相同的方式添加到与核心选项相同的对象中。</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">// 顶部导航和底部状态栏的高度,</span>
+<span class="token comment">// &quot;bottom&quot; 属性的值可以是 'auto' (自动计算高度)</span>
+<span class="token comment">// 属性在mouse使用情况下才能生效, </span>
+<span class="token comment">// 或者屏幕宽度大于 1200px</span>
+<span class="token comment">// </span>
+<span class="token comment">// (Also refer to `parseVerticalMargin` event)</span>
+barsSize<span class="token punctuation">:</span> <span class="token punctuation">{</span>top<span class="token punctuation">:</span><span class="token number">44</span><span class="token punctuation">,</span> bottom<span class="token punctuation">:</span><span class="token string">'auto'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> 
+
+<span class="token comment">// Adds class pswp__ui--idle to pswp__ui element when mouse isn't moving for 4000ms</span>
+<span class="token comment">// 当鼠标不移动4000毫秒后，将类pswp__ui--idle添加到pswp__ui元素</span>
+timeToIdle<span class="token punctuation">:</span> <span class="token number">4000</span><span class="token punctuation">,</span>
+
+<span class="token comment">// Same as above, but this timer applies when mouse leaves the window</span>
+<span class="token comment">// 当鼠标离开窗口后添加</span>
+timeToIdleOutside<span class="token punctuation">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+
+<span class="token comment">// Delay until loading indicator is displayed</span>
+<span class="token comment">// 显示加载指示器的延迟</span>
+loadingIndicatorDelay<span class="token punctuation">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+
+<span class="token comment">// Function builds caption markup</span>
+<span class="token function-variable function">addCaptionHTMLFn</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">item<span class="token punctuation">,</span> captionEl<span class="token punctuation">,</span> isFake</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// item      - slide object</span>
+    <span class="token comment">// captionEl - caption DOM element</span>
+    <span class="token comment">// isFake    - true when content is added to fake caption container</span>
+    <span class="token comment">//             (used to get size of next or previous caption)</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>item<span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        captionEl<span class="token punctuation">.</span>children<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    captionEl<span class="token punctuation">.</span>children<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> item<span class="token punctuation">.</span>title<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+<span class="token comment">// Buttons/elements</span>
+closeEl<span class="token punctuation">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+captionEl<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+fullscreenEl<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+zoomEl<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+shareEl<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+counterEl<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+arrowEl<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+preloaderEl<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+<span class="token comment">// Tap on sliding area should close gallery</span>
+tapToClose<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+
+<span class="token comment">// Tap should toggle visibility of controls</span>
+tapToToggleControls<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+<span class="token comment">// Mouse click on image should close the gallery,</span>
+<span class="token comment">// only when image is smaller than size of the viewport</span>
+clickToCloseNonZoomable<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+
+<span class="token comment">// Element classes click on which should close the PhotoSwipe.</span>
+<span class="token comment">// In HTML markup, class should always start with &quot;pswp__&quot;, e.g.: &quot;pswp__item&quot;, &quot;pswp__caption&quot;.</span>
+<span class="token comment">// </span>
+<span class="token comment">// &quot;pswp__ui--over-close&quot; class will be added to root element of UI when mouse is over one of these elements</span>
+<span class="token comment">// By default it's used to highlight the close button.</span>
+closeElClasses<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'item'</span><span class="token punctuation">,</span> <span class="token string">'caption'</span><span class="token punctuation">,</span> <span class="token string">'zoom-wrap'</span><span class="token punctuation">,</span> <span class="token string">'ui'</span><span class="token punctuation">,</span> <span class="token string">'top-bar'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> 
+
+<span class="token comment">// Separator for &quot;1 of X&quot; counter</span>
+indexIndicatorSep<span class="token punctuation">:</span> <span class="token string">' / '</span><span class="token punctuation">,</span>
+
+
+
+<span class="token comment">// Share buttons</span>
+<span class="token comment">// </span>
+<span class="token comment">// Available variables for URL:</span>
+<span class="token comment">// {{url}}             - url to current page</span>
+<span class="token comment">// {{text}}            - title</span>
+<span class="token comment">// {{image_url}}       - encoded image url</span>
+<span class="token comment">// {{raw_image_url}}   - raw image url</span>
+shareButtons<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>id<span class="token punctuation">:</span><span class="token string">'facebook'</span><span class="token punctuation">,</span> label<span class="token punctuation">:</span><span class="token string">'Share on Facebook'</span><span class="token punctuation">,</span> url<span class="token punctuation">:</span><span class="token string">'https://www.facebook.com/sharer/sharer.php?u={{url}}'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>id<span class="token punctuation">:</span><span class="token string">'twitter'</span><span class="token punctuation">,</span> label<span class="token punctuation">:</span><span class="token string">'Tweet'</span><span class="token punctuation">,</span> url<span class="token punctuation">:</span><span class="token string">'https://twitter.com/intent/tweet?text={{text}}&amp;url={{url}}'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>id<span class="token punctuation">:</span><span class="token string">'pinterest'</span><span class="token punctuation">,</span> label<span class="token punctuation">:</span><span class="token string">'Pin it'</span><span class="token punctuation">,</span> url<span class="token punctuation">:</span><span class="token string">'http://www.pinterest.com/pin/create/button/?url={{url}}&amp;media={{image_url}}&amp;description={{text}}'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>id<span class="token punctuation">:</span><span class="token string">'download'</span><span class="token punctuation">,</span> label<span class="token punctuation">:</span><span class="token string">'Download image'</span><span class="token punctuation">,</span> url<span class="token punctuation">:</span><span class="token string">'{{raw_image_url}}'</span><span class="token punctuation">,</span> download<span class="token punctuation">:</span><span class="token boolean">true</span><span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+
+<span class="token comment">// Next 3 functions return data for share links</span>
+<span class="token comment">// </span>
+<span class="token comment">// functions are triggered after click on button that opens share modal,</span>
+<span class="token comment">// which means that data should be about current (active) slide</span>
+<span class="token function-variable function">getImageURLForShare</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span> <span class="token parameter">shareButtonData</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// `shareButtonData` - object from shareButtons array</span>
+    <span class="token comment">// </span>
+    <span class="token comment">// `pswp` is the gallery instance object,</span>
+    <span class="token comment">// you should define it by yourself</span>
+    <span class="token comment">// </span>
+    <span class="token keyword">return</span> pswp<span class="token punctuation">.</span>currItem<span class="token punctuation">.</span>src <span class="token operator">||</span> <span class="token string">''</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token function-variable function">getPageURLForShare</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span> <span class="token parameter">shareButtonData</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token function-variable function">getTextForShare</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span> <span class="token parameter">shareButtonData</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> pswp<span class="token punctuation">.</span>currItem<span class="token punctuation">.</span>title <span class="token operator">||</span> <span class="token string">''</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+<span class="token comment">// Parse output of share links</span>
+<span class="token function-variable function">parseShareButtonOut</span><span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">shareButtonData<span class="token punctuation">,</span> shareButtonOut</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// `shareButtonData` - object from shareButtons array</span>
+    <span class="token comment">// `shareButtonOut` - raw string of share link element</span>
+    <span class="token keyword">return</span> shareButtonOut<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="api"><a href="#api" class="header-anchor">#</a> API</h2> <p>以下所有的属性和方法都是公共的，您可以在初始化时获取PhotoSwipe实例化对象</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br></div><pre class="language-js"><code><span class="token keyword">var</span> photoswipeInstance <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PhotoSwipe</span><span class="token punctuation">(</span> <span class="token comment">/* ... */</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="方法"><a href="#方法" class="header-anchor">#</a> 方法</h3> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">var</span> pswp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PhotoSwipe</span><span class="token punctuation">(</span> <span class="token comment">/* ... */</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 初始化与打开画廊</span>
+<span class="token comment">// (您可以在调用之前绑定事件)</span>
+pswp<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Go to slide by index</span>
+<span class="token comment">// @param {int} `index`</span>
+pswp<span class="token punctuation">.</span><span class="token function">goTo</span><span class="token punctuation">(</span>index<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Go to the next slide</span>
+pswp<span class="token punctuation">.</span><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Go to the previous slide</span>
+pswp<span class="token punctuation">.</span><span class="token function">prev</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 更新画廊尺寸</span>
+<span class="token comment">// @param  {boolean} `force` 如果设置为 true, 即使视图尺寸没有发生变化也会触发更新</span>
+<span class="token comment">//                          </span>
+pswp<span class="token punctuation">.</span><span class="token function">updateSize</span><span class="token punctuation">(</span>force<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Close gallery</span>
+pswp<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Destroy gallery,</span>
+<span class="token comment">// automatically called after close() </span>
+pswp<span class="token punctuation">.</span><span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// Zoom current slide to (optionally with animation)</span>
+<span class="token comment">// @param  {number}   `destZoomLevel` Destination scale number. 1 - original.  </span>
+<span class="token comment">//                                   pswp.currItem.fitRatio - image will fit into viewport.</span>
+<span class="token comment">// @param  {object}   `centerPoint`   Object of x and y coordinates, relative to viewport.</span>
+<span class="token comment">// @param  {int}      `speed`         Animation duration. Can be 0.</span>
+<span class="token comment">// @param  {function} `easingFn`      Easing function (optional). Set to false to use default easing.</span>
+<span class="token comment">// @param  {function} `updateFn`      Function will be called on each update frame. (optional)</span>
+<span class="token comment">//</span>
+<span class="token comment">// Example below will 2x zoom to center of slide:</span>
+<span class="token comment">// pswp.zoomTo(2, {x:pswp.viewportSize.x/2,y:pswp.viewportSize.y/2}, 2000, false, function(now) {</span>
+<span class="token comment">//      </span>
+<span class="token comment">// });</span>
+pswp<span class="token punctuation">.</span><span class="token function">zoomTo</span><span class="token punctuation">(</span>destZoomLevel<span class="token punctuation">,</span> centerPoint<span class="token punctuation">,</span> speed<span class="token punctuation">,</span> easingFn<span class="token punctuation">,</span> updateFn<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Apply zoom and pan to the current slide</span>
+<span class="token comment">// </span>
+<span class="token comment">// @param   {number} `zoomLevel`</span>
+<span class="token comment">// @param   {int}    `panX`</span>
+<span class="token comment">// @param   {int}    `panY`</span>
+<span class="token comment">// </span>
+<span class="token comment">// For example: `pswp.applyZoomPan(1, 0, 0)`</span>
+<span class="token comment">// will zoom current image to the original size</span>
+<span class="token comment">// and will place it on top left corner</span>
+<span class="token comment">// </span>
+<span class="token comment">// </span>
+pswp<span class="token punctuation">.</span><span class="token function">applyZoomPan</span><span class="token punctuation">(</span>zoomLevel<span class="token punctuation">,</span> panX<span class="token punctuation">,</span> panY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="属性"><a href="#属性" class="header-anchor">#</a> 属性</h3> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">// current slide object</span>
+pswp<span class="token punctuation">.</span>currItem
+
+<span class="token comment">// items array (slides, images)</span>
+pswp<span class="token punctuation">.</span>items
+
+<span class="token comment">// size of sliding viewport</span>
+pswp<span class="token punctuation">.</span>viewportSize
+
+<span class="token comment">// object holds all functions from framework</span>
+<span class="token comment">// framework-bridge.js</span>
+pswp<span class="token punctuation">.</span>framework
+
+<span class="token comment">// UI object (e.g. PhotoSwipeUI_Default instance)</span>
+pswp<span class="token punctuation">.</span>ui
+
+<span class="token comment">// background element (pswp__bg)</span>
+pswp<span class="token punctuation">.</span>bg
+
+<span class="token comment">// container element (pswp__container)</span>
+pswp<span class="token punctuation">.</span>container
+
+<span class="token comment">// options</span>
+pswp<span class="token punctuation">.</span>options
+
+
+
+<span class="token comment">// Even though methods below aren't technically properties, we list them here:</span>
+
+<span class="token comment">// current item index (int)</span>
+pswp<span class="token punctuation">.</span><span class="token function">getCurrentIndex</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// total number of items</span>
+pswp<span class="token punctuation">.</span>options<span class="token punctuation">.</span><span class="token function">getNumItemsFn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// current zoom level (number)</span>
+pswp<span class="token punctuation">.</span><span class="token function">getZoomLevel</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// one (or more) pointer is used</span>
+pswp<span class="token punctuation">.</span><span class="token function">isDragging</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// two (or more) pointers are used</span>
+pswp<span class="token punctuation">.</span><span class="token function">isZooming</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// `true` when transition between is running (after swipe)</span>
+pswp<span class="token punctuation">.</span><span class="token function">isMainScrollAnimating</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="事件"><a href="#事件" class="header-anchor">#</a> 事件</h3> <p>PhotoSwipe 使用了非常简单的事件/通知系统。它包含两个方法<code>shout</code>(触发事件) 和 <code>listen</code>(控制器),目前还没有方法来解除绑定监听器,但是他们会在PhotoSwipe关闭时全部被清除</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">var</span> pswp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PhotoSwipe</span><span class="token punctuation">(</span><span class="token comment">/* ... */</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Listen for &quot;helloWorld&quot; event</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'helloWorld'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Name is: '</span> <span class="token operator">+</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Trigger &quot;helloWorld&quot; event</span>
+pswp<span class="token punctuation">.</span><span class="token function">shout</span><span class="token punctuation">(</span><span class="token string">'helloWorld'</span><span class="token punctuation">,</span> <span class="token string">'John'</span> <span class="token comment">/* you may pass more arguments */</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>可用事件：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">// 图片切换之前</span>
+<span class="token comment">// (内容变化之前，导航变化之后)</span>
+<span class="token comment">// Update UI here (like &quot;1 of X&quot; indicator)</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'beforeChange'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 图片切换完成后</span>
+<span class="token comment">// (after content changed)</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'afterChange'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 图片加载完成</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'imageLoadComplete'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index<span class="token punctuation">,</span> item</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+   <span class="token comment">// index - index of a slide that was loaded</span>
+   <span class="token comment">// item - slide object</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 视窗尺寸发生改变</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'resize'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// PhotoSwipe 读取 slide 数据时触发,</span>
+<span class="token comment">// which happens before content is set, or before lazy-loading is initiated.</span>
+<span class="token comment">// 多用来动态修改属性</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'gettingData'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index<span class="token punctuation">,</span> item</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">// index - index of a slide that was loaded</span>
+   <span class="token comment">// item - slide object</span>
+
+   <span class="token comment">// e.g. change path to the image based on `something`</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span> something <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       item<span class="token punctuation">.</span>src <span class="token operator">=</span> item<span class="token punctuation">.</span>something<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+       item<span class="token punctuation">.</span>src <span class="token operator">=</span> item<span class="token punctuation">.</span>somethingElse<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Mouse was used (triggers only once)</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'mouseUsed'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// 放大动画开始时触发</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'initialZoomIn'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 放大动画结束时触发</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'initialZoomInEnd'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 缩小动画开始时触发</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'initialZoomOut'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 缩小动画结束后触发</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'initialZoomOutEnd'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// 允许覆盖单个slide项的垂直外边距</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'parseVerticalMargin'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+   <span class="token comment">// For example:</span>
+   <span class="token keyword">var</span> gap <span class="token operator">=</span> item<span class="token punctuation">.</span>vGap<span class="token punctuation">;</span>
+
+   gap<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">;</span> <span class="token comment">// There will be 50px gap from top of viewport</span>
+   gap<span class="token punctuation">.</span>bottom <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span> <span class="token comment">// and 100px gap from the bottom</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 画廊开始关闭</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'close'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 画廊解绑事件</span>
+<span class="token comment">// (关闭动画开始时触发)</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'unbindEvents'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 画廊关闭且动画执行完成后触发.</span>
+<span class="token comment">// Clean up your stuff here.</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'destroy'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 页面滚动时调用.</span>
+<span class="token comment">// 回调函数传递一个偏移量对象 {x: number, y: number}.</span>
+<span class="token comment">//</span>
+<span class="token comment">// PhotoSwipe 通过偏移量确定页面的左上角位置</span>
+<span class="token comment">// 当module设置为false时，默认为视窗左上角,</span>
+<span class="token comment">// 您应该在调用 .init()之前监听此事件并修改偏移量</span>
+<span class="token comment">// 使用魔板的 getBoundingClientRect().</span>
+<span class="token comment">//</span>
+<span class="token comment">// Look at the &quot;Implementing inline gallery display&quot; FAQ section for more info.</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'updateScrollOffset'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">_offset</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token keyword">var</span> r <span class="token operator">=</span> gallery<span class="token punctuation">.</span>template<span class="token punctuation">.</span><span class="token function">getBoundingClientRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   _offset<span class="token punctuation">.</span>x <span class="token operator">+=</span> r<span class="token punctuation">.</span>left<span class="token punctuation">;</span>
+   _offset<span class="token punctuation">.</span>y <span class="token operator">+=</span> r<span class="token punctuation">.</span>top<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// PhotoSwipe有一个名为pswpTap的特殊事件</span>
+<span class="token comment">// 使用默认的JavaScript事件模型调度。</span>
+<span class="token comment">// 因此，你可以调用 stopPropagation.</span>
+<span class="token comment">// pswp.framework.bind - 是 addEventListener的缩写</span>
+pswp<span class="token punctuation">.</span><span class="token function">framework</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span> pswp<span class="token punctuation">.</span>scrollWrap <span class="token comment">/* bind on any element of gallery */</span><span class="token punctuation">,</span> <span class="token string">'pswpTap'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'tap'</span><span class="token punctuation">,</span> e<span class="token punctuation">,</span> e<span class="token punctuation">.</span>detail<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token comment">// e.detail.origEvent  // original event that finished tap (e.g. mouseup or touchend)</span>
+   <span class="token comment">// e.detail.target // e.target of original event</span>
+   <span class="token comment">// e.detail.releasePoint // object with x/y coordinates of tap</span>
+   <span class="token comment">// e.detail.pointerType // mouse, touch, or pen</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Allow to call preventDefault on down and up events</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'preventDragEvent'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e<span class="token punctuation">,</span> isDown<span class="token punctuation">,</span> preventObj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">// e - original event</span>
+   <span class="token comment">// isDown - true = drag start, false = drag release</span>
+
+   <span class="token comment">// Line below will force e.preventDefault() on:</span>
+   <span class="token comment">// touchstart/mousedown/pointerdown events</span>
+   <span class="token comment">// as well as on:</span>
+   <span class="token comment">// touchend/mouseup/pointerup events</span>
+   preventObj<span class="token punctuation">.</span>prevent <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+
+<span class="token comment">// Default UI events</span>
+<span class="token comment">// -------------------------</span>
+
+<span class="token comment">// 分享按钮点击事件</span>
+pswp<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'shareLinkClick'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">e<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+   <span class="token comment">// e - original click event</span>
+   <span class="token comment">// target - link that was clicked</span>
+
+   <span class="token comment">// If `target` has `href` attribute and </span>
+   <span class="token comment">// does not have `download` attribute - </span>
+   <span class="token comment">// share modal window will popup</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="动态添加slides"><a href="#动态添加slides" class="header-anchor">#</a> 动态添加slides</h3> <p>直接修改items数组即可:</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br></div><pre class="language-js"><code>pswp<span class="token punctuation">.</span>items<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   src<span class="token punctuation">:</span> <span class="token string">&quot;path/to/image.jpg&quot;</span><span class="token punctuation">,</span> 
+   w<span class="token punctuation">:</span><span class="token number">1200</span><span class="token punctuation">,</span>
+   h<span class="token punctuation">:</span><span class="token number">500</span> 
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>如果您修改的是当前、下一个或上一个slide，你需要调用方法来更新他们</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br></div><pre class="language-js"><code><span class="token comment">// sets a flag that slides should be updated</span>
+pswp<span class="token punctuation">.</span><span class="token function">invalidateCurrItems</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// updates the content of slides</span>
+pswp<span class="token punctuation">.</span><span class="token function">updateSize</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>否则，您无需执行其他任何操作。如果您要更新默认UI的某些部分（例如，“ 1 of X”计数器），则可能会调用pswp.ui.update（）。另请注意：</p> <ul><li>您不能赋值整个数组，只能对其进行修改（例如，使用splice删除元素）。</li> <li>如果要删除当前slide-请先调用 goTo 方法</li> <li>至少需要一个slide</li> <li>此方法用于服务响应式图片。</li></ul> <h2 id="自定义html内容"><a href="#自定义html内容" class="header-anchor">#</a> 自定义HTML内容</h2> <p>如果您想在Slide中显示HTML内容，您需要在slides对象中定义 html属性。它应该是HTML字符串或者DOM元素对象</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">var</span> items <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token comment">// slide 1 with HTML</span>
+    <span class="token punctuation">{</span>
+        html<span class="token punctuation">:</span> <span class="token string">'&lt;div&gt;&lt;h1&gt;Any HTML &lt;a href=&quot;http://example.com&quot;&gt;content&lt;/a&gt;&lt;/h1&gt;&lt;/div&gt;'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// slide 2 with image</span>
+    <span class="token punctuation">{</span>
+        src<span class="token punctuation">:</span> <span class="token string">'path/to/image.jpg'</span><span class="token punctuation">,</span>
+        w<span class="token punctuation">:</span><span class="token number">600</span><span class="token punctuation">,</span>
+        h<span class="token punctuation">:</span><span class="token number">200</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// 初始化</span>
+<span class="token keyword">var</span> gallery <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PhotoSwipe</span><span class="token punctuation">(</span> pswpElement<span class="token punctuation">,</span> PhotoSwipeUI_Default<span class="token punctuation">,</span> items<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 不必一开始就包含html属性.</span>
+<span class="token comment">// 也可以在gettingData事件中动态插入:</span>
+<span class="token comment">/*
+    gallery.listen('gettingData', function(index, item) {
+        if(index === 3) {
+            item.html = '&lt;div&gt;Dynamically generated HTML ' + Math.random() + '&lt;/div&gt;';
+        }
+
+    });
+*/</span>
+
+<span class="token comment">// 绑定gettingData事件后调用 init方法。</span>
+gallery<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>其他重要说明：</p> <ul><li>为了避免与其他第三方模块冲突，包含html属性的slide项应该不包含src属性</li> <li>PhotoSwipe 是为图片设计，而不是作为文本内容的滚动容器，例如带有相关画廊的幻灯片，介绍性幻灯片或图像之间的广告</li> <li>强烈建议您不要使用此方法添加视频或音频元素或者iframe，由于HTML5视频在许多移动浏览器中都阻止了触摸事件（用户将无法对其进行滑动）。如果确实需要在PhotoSwipe中播放视频，则可以将其添加为用户在当前幻灯片上轻按时出现的模态框中，可以在DOM中动态创建模态并将其添加到<code>.pswp__scroll-wrap</code>元素之后</li> <li>如果您启用了初始放大/缩小过渡，如果当前幻灯片具有<code>html</code>，PhotoSwipe将自动禁用它，而将使用简单的淡入过渡。</li> <li>默认情况下，PhotoSwipe将仅在a标签及其子元素上允许单击事件。要更改此行为，请查看isClickableElement选项或preventDragEvent事件</li> <li>HTML slides不支持缩放。</li></ul> <h2 id="响应式图片"><a href="#响应式图片" class="header-anchor">#</a> 响应式图片</h2> <p>PhotoSwipe不支持<code>&lt;picture&gt;</code>或srcset，因为它需要定义的图像尺寸并使用延迟加载。但是，由于图像是动态加载的，即使在不支持srcset的旧浏览器中，切换资源也很容易。</p> <p>假设您只有“中”图像和“原始”（“大”）图像。首先，您需要将图像的路径和大小存储在幻灯片对象中，例如:</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token keyword">var</span> items <span class="token operator">=</span> <span class="token punctuation">[</span>
+
+    <span class="token comment">// Slide 1</span>
+    <span class="token punctuation">{</span>
+        mediumImage<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            src<span class="token punctuation">:</span> <span class="token string">'path/to/medium-image-1.jpg'</span><span class="token punctuation">,</span>
+            w<span class="token punctuation">:</span><span class="token number">800</span><span class="token punctuation">,</span>
+            h<span class="token punctuation">:</span><span class="token number">600</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        originalImage<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+            src<span class="token punctuation">:</span> <span class="token string">'path/to/large-image-1.jpg'</span><span class="token punctuation">,</span>
+            w<span class="token punctuation">:</span> <span class="token number">1400</span><span class="token punctuation">,</span>
+            h<span class="token punctuation">:</span> <span class="token number">1050</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// Slide 2</span>
+    <span class="token comment">// {</span>
+    <span class="token comment">//     mediumImage: {</span>
+    <span class="token comment">//         src: 'path/to/medium-image-2.jpg',</span>
+    <span class="token comment">//         ...</span>
+    <span class="token comment">//     </span>
+    <span class="token comment">// ...</span>
+
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>然后：</p> <div class="language-js extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-js"><code><span class="token comment">// initialise as usual</span>
+<span class="token keyword">var</span> gallery <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PhotoSwipe</span><span class="token punctuation">(</span> pswpElement<span class="token punctuation">,</span> PhotoSwipeUI_Default<span class="token punctuation">,</span> items<span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 声明变量保存实际视窗宽度</span>
+<span class="token keyword">var</span> realViewportWidth<span class="token punctuation">,</span>
+    useLargeImages <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    firstResize <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    imageSrcWillChange<span class="token punctuation">;</span>
+
+<span class="token comment">// 在视窗发生改变时会触发 beforeResize 事件</span>
+gallery<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'beforeResize'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// gallery.viewportSize.x - width of PhotoSwipe viewport</span>
+    <span class="token comment">// gallery.viewportSize.y - height of PhotoSwipe viewport</span>
+    <span class="token comment">// window.devicePixelRatio - ratio between physical pixels and device independent pixels (Number)</span>
+    <span class="token comment">//                          1 (regular display), 2 (@2x, retina) ...</span>
+
+
+    <span class="token comment">// 计算视窗真实像素</span>
+    realViewportWidth <span class="token operator">=</span> gallery<span class="token punctuation">.</span>viewportSize<span class="token punctuation">.</span>x <span class="token operator">*</span> window<span class="token punctuation">.</span>devicePixelRatio<span class="token punctuation">;</span>
+
+    <span class="token comment">// 如果要图像在window.resize上动态切换，则需要以下代码。</span>
+
+    <span class="token comment">// Find out if current images need to be changed</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>useLargeImages <span class="token operator">&amp;&amp;</span> realViewportWidth <span class="token operator">&lt;</span> <span class="token number">1000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        useLargeImages <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        imageSrcWillChange <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>useLargeImages <span class="token operator">&amp;&amp;</span> realViewportWidth <span class="token operator">&gt;=</span> <span class="token number">1000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        useLargeImages <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        imageSrcWillChange <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Invalidate items only when source is changed and when it's not the first update</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>imageSrcWillChange <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>firstResize<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// invalidateCurrItems sets a flag on slides that are in DOM,</span>
+        <span class="token comment">// which will force update of content (image) on window.resize.</span>
+        gallery<span class="token punctuation">.</span><span class="token function">invalidateCurrItems</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>firstResize<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        firstResize <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    imageSrcWillChange <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// gettingData event fires each time PhotoSwipe retrieves image source &amp; size</span>
+gallery<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token string">'gettingData'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">index<span class="token punctuation">,</span> item</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">// Set image source &amp; size based on real viewport width</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span> useLargeImages <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        item<span class="token punctuation">.</span>src <span class="token operator">=</span> item<span class="token punctuation">.</span>originalImage<span class="token punctuation">.</span>src<span class="token punctuation">;</span>
+        item<span class="token punctuation">.</span>w <span class="token operator">=</span> item<span class="token punctuation">.</span>originalImage<span class="token punctuation">.</span>w<span class="token punctuation">;</span>
+        item<span class="token punctuation">.</span>h <span class="token operator">=</span> item<span class="token punctuation">.</span>originalImage<span class="token punctuation">.</span>h<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        item<span class="token punctuation">.</span>src <span class="token operator">=</span> item<span class="token punctuation">.</span>mediumImage<span class="token punctuation">.</span>src<span class="token punctuation">;</span>
+        item<span class="token punctuation">.</span>w <span class="token operator">=</span> item<span class="token punctuation">.</span>mediumImage<span class="token punctuation">.</span>w<span class="token punctuation">;</span>
+        item<span class="token punctuation">.</span>h <span class="token operator">=</span> item<span class="token punctuation">.</span>mediumImage<span class="token punctuation">.</span>h<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// It doesn't really matter what will you do here, </span>
+    <span class="token comment">// as long as item.src, item.w and item.h have valid values.</span>
+    <span class="token comment">// </span>
+    <span class="token comment">// Just avoid http requests in this listener, as it fires quite often</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// Note that init() method is called after gettingData event is bound</span>
+gallery<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>您不必使用看起来完全像上面的幻灯片对象的结构（带有mediumImage和largeImage对象）。例如，您可以将图像的大小直接存储在图像文件名（/path/to/large-image-600x500.jpg）中，然后在getDataData事件中解析大小。PhotoSwipe仅在触发getData事件后才读取item.src，item.w和item.h属性。</li> <li>图片越大，动画越不平滑</li> <li>尽量避免仅基于devicePixelRatio或仅基于视口大小来提供图片，请始终将两者结合</li> <li>缩略图上允许使用 <code>srcset</code></li></ul> <h2 id="性能优化"><a href="#性能优化" class="header-anchor">#</a> 性能优化</h2> <h3 id="动画"><a href="#动画" class="header-anchor">#</a> 动画</h3> <ul><li>动画效果很大程度上取决于图像的大小。图片越小动画越平滑。因此，请不要使用懒加载和响应式图片，或者在移动设备商使用大于1200x1200的图片</li> <li>不要在动画持续期间使用导致重排或重绘的操作。不要向DOM中添加新元素。不要修改<code>display</code>或<code>visibility</code>属性.您只能修改<code>transform</code>和<code>opacity</code>。尽量使用<code>beforeChange</code>,<code>initialZoomInEnd</code>,<code>initialZoomOutEnd</code> 事件在动画结束后延迟修改</li> <li>如果启用了放大/缩小动画，则尽量避免在打开PhotoSwipe的缩略图上使用复杂的：hover和：active效果（应用第一个规则）。</li> <li>尽量不要在PhotoSwipe滑动区域上的UI上设置复杂的样式。例如，字幕文本上的文本阴影可能会引起问题。</li></ul> <h3 id="包含文件"><a href="#包含文件" class="header-anchor">#</a> 包含文件</h3> <ul><li>默认的PhotoSwipe UI具有png和svg精灵图。默认情况下，仅在打开PhotoSwipe之后才加载它。为了使控件立即显示，您可以将Gallery 精灵图与站点“ main” 精灵图合并，或使用CSS预加载。</li> <li>如果PhotoSwipe 不是页面的主要功能，请异步加载PhotoSwipe JS文件</li> <li>压缩合并js,css文件</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/doc/docs/workbox中文文档.html">workbox中文文档</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/doc/assets/js/app.cc42e0ae.js" defer></script><script src="/doc/assets/js/2.5004e8d4.js" defer></script><script src="/doc/assets/js/7.6da62fb6.js" defer></script>
+  </body>
+</html>
