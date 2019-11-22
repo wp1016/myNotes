@@ -5,47 +5,49 @@ module.exports = {
   lastUpdated: '最近一次提交：',
   themeConfig: {
     nav: [
-      { text: '数据结构', link: '/algorithms/' },
-      { text: '网络协议', link: '/http/' },
-      { text: '中文文档', link: '/docs/' },
-      { text: 'js基础', link: '/js/' },
-      { text: '采坑记录', link: '/records/' },
-    ],
-    sidebarDepth: 2,
-    sidebar: {
-      '/algorithms/': ['/algorithms/'],
-      '/http/': ['/http/'],
-      '/docs/': [
+      {
+        text: '计算机基础',
+        items: [
+          { text: '数据结构', link: '/algorithms/' },
+          { text: '网络协议', link: '/http/' },
+        ],
+      },
+      {
+        text: '前端基础',
+        items: [
           {
-            title: 'PhotoSwipe中文文档',
-            collapsable: true,
-            children: ['./PhotoSwipe中文文档.md'],
+            text: 'JavaScript',
+            items: [
+              { text: 'js判断鼠标进入方向', link: '/js/js判断鼠标进入方向.md' },
+              { text: 'js事件循环机制', link: '/js/js事件循环机制.md' },
+            ],
           },
           {
-            title: 'workbox中文文档',
-            collapsable: false,
-            children: ['./workbox中文文档'],
-          }
-      ],
-      '/js/': [
-        {
-          title: 'js判断鼠标进入方向',
-          collapsable: true,
-          children: ['./js判断鼠标进入方向'],
-        },
-        {
-          title: 'js事件循环机制',
-          collapsable: true,
-          children: ['./js事件循环机制'],
-        },
-      ],
-      '/records/': [
-        {
-          title: 'vue+ts采坑记录',
-          collapsable: true,
-          children: ['./vue+ts采坑记录'],
-        },
-      ],
-    },
+            text: 'TypeScript',
+            items: [
+              { text: 'Typescript 学习记录', link: '/typeScript/TypeScript' },
+            ],
+          },
+        ],
+      },
+      {
+        text: '中文文档',
+        items: [
+          { text: 'PhotoSwipe中文文档', link: '/docs/PhotoSwipe中文文档' },
+          { text: 'workbox中文文档', link: '/docs/workbox中文文档' },
+        ],
+      },
+      {
+        text: '采坑记录',
+        items: [
+          {
+            text: 'vue+ts采坑记录',
+            link: '/records/vue+ts采坑记录',
+          },
+        ],
+      },
+    ],
+    sidebarDepth: 2,
+    sidebar: 'auto',
   },
 }
