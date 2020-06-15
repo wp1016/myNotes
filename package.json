@@ -8,5 +8,8 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "stylus-loader": "^3.0.2"
+  }
 }

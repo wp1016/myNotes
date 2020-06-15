@@ -46,8 +46,16 @@ module.exports = {
           },
         ],
       },
+      {
+        text: '文章',
+        link: '/articles/index'
+      }
     ],
     sidebarDepth: 2,
     sidebar: 'auto',
+    '/articles/': {
+      sidebar: 'auto'
+    }
   },
+  evergreen: true
 }
