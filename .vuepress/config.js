@@ -48,7 +48,7 @@ module.exports = {
       },
       {
         text: '文章',
-        link: '/articles/index'
+        link: '/articles/list'
       }
     ],
     sidebarDepth: 2,
